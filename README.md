@@ -44,6 +44,7 @@ clinical-data-warehouse/
 ├── data_generator.py
 ├── requirements.txt
 ├── README.md
+├── UML_CDW.drawio.pdf
 ├── Data/
 │   ├── credentials.csv
 │   ├── patients.csv
@@ -53,18 +54,32 @@ clinical-data-warehouse/
 │   ├── procedures.csv
 │   └── notes.csv
 ├── output/
-├── usage_log.csv
-└── statistics_charts/
-    ├── department_revenue.png
-    ├── encounters_by_type.png
-    ├── patient_gender_distribution.png
-    └── provider_workload_top10.png
+│   ├── usage_log.csv
+│   └── statistics_charts/
+│       ├── department_revenue.png
+│       ├── encounters_by_type.png
+│       ├── patient_gender_distribution.png
+│       └── provider_workload_top10.png
 └── src/
+    ├── __init__.py
     ├── users.py
     ├── warehouse.py
     ├── logger.py
     └── ui.py
 ```
+
+## Features
+
+- User authentication and role validation
+- Tkinter-based graphical user interface
+- Add, remove, and retrieve patient information
+- View patient clinical notes
+- Count patient visits
+- Generate statistics and charts
+- Monitor department revenue
+- Monitor provider workload
+- Persistent CSV file updates
+- Usage statistics logging
 
 ##  UML design
 
