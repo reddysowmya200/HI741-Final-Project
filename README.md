@@ -36,7 +36,7 @@ Management:
 
 This project is a Tkinter-based Clinical Data Warehouse UI. It validates user credentials, checks user roles, displays role-based actions, and allows authorized users to retrieve, add, remove, and view patient-related data. It also supports administrative and management analytics such as encounter counts, provider workload, and department revenue.
 
-## Folder structure
+## Project structure
 
 ```text
 clinical-data-warehouse/
@@ -88,3 +88,16 @@ Classes to include in the UML diagram:
 
 ## Key Statistics Charts
 The Key Statistics button uses matplotlib to create charts in `output/statistics_charts/`. Install required packages with `pip install -r requirements.txt`.
+
+
+## Notes
+- This project was developed for the HI 741 Final Project assignment.
+- The application uses Python and Tkinter for the user interface.
+- Patient data updates are stored persistently in CSV files.
+- Usage statistics and failed login attempts are recorded in `output/usage_log.csv`.
+
+## Author
+Venkata Sowmya Priya - HI 741 Spring 2025
+
+## Due Date
+May 22, 2026 - 11:59 PM CT
