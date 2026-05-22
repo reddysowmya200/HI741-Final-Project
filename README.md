@@ -14,7 +14,7 @@ python data_generator.py
 
 Move the generated CSV files into the `Data/` folder if needed.
 
-## Test logins
+##  Test logins
 
 Clinician:
 - username: `alice`
@@ -32,11 +32,11 @@ Management:
 - username: `carol`
 - password: `pass789`
 
-## Program description
+##  Program description
 
 This project is a Tkinter-based Clinical Data Warehouse UI. It validates user credentials, checks user roles, displays role-based actions, and allows authorized users to retrieve, add, remove, and view patient-related data. It also supports administrative and management analytics such as encounter counts, provider workload, and department revenue.
 
-## Project structure
+##  Project structure
 
 ```text
 clinical-data-warehouse/
@@ -61,7 +61,7 @@ clinical-data-warehouse/
     └── ui.py
 ```
 
-## UML design
+##  UML design
 
 Classes to include in the UML diagram:
 
@@ -80,24 +80,24 @@ Classes to include in the UML diagram:
   - attributes: `root`, `auth`, `warehouse`, `logger`, `current_user`
   - methods: `show_login`, `login`, `show_menu`, and UI action methods
 
-## Output files
+##  Output files
 
 - `Data/patients.csv`: updated after adding or removing patients.
 - `output/usage_log.csv`: records login attempts and user actions.
 
 
-## Key Statistics Charts
+##  Key Statistics Charts
 The Key Statistics button uses matplotlib to create charts in `output/statistics_charts/`. Install required packages with `pip install -r requirements.txt`.
 
 
-## Notes
+##  Notes
 - This project was developed for the HI 741 Final Project assignment.
 - The application uses Python and Tkinter for the user interface.
 - Patient data updates are stored persistently in CSV files.
 - Usage statistics and failed login attempts are recorded in `output/usage_log.csv`.
 
-## Author
+##  Author
 Venkata Sowmya Priya - HI 741 Spring 2025
 
-## Due Date
+##  Due Date
 May 22, 2026 - 11:59 PM CT
