@@ -53,7 +53,12 @@ clinical-data-warehouse/
 │   ├── procedures.csv
 │   └── notes.csv
 ├── output/
-│   └── usage_log.csv
+├── usage_log.csv
+└── statistics_charts/
+    ├── department_revenue.png
+    ├── encounters_by_type.png
+    ├── patient_gender_distribution.png
+    └── provider_workload_top10.png
 └── src/
     ├── users.py
     ├── warehouse.py
