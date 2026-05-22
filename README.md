@@ -1,5 +1,22 @@
 # Clinical Data Warehouse Tkinter UI
 
+##  Program description
+
+This project is a Tkinter-based Clinical Data Warehouse UI. It validates user credentials, checks user roles, displays role-based actions, and allows authorized users to retrieve, add, remove, and view patient-related data. It also supports administrative and management analytics such as encounter counts, provider workload, and department revenue.
+
+## Features
+
+- User authentication and role validation
+- Tkinter-based graphical user interface
+- Add, remove, and retrieve patient information
+- View patient clinical notes
+- Count patient visits
+- Generate statistics and charts
+- Monitor department revenue
+- Monitor provider workload
+- Persistent CSV file updates
+- Usage statistics logging
+  
 ## How to run
 
 ```bash
@@ -32,9 +49,6 @@ Management:
 - username: `carol`
 - password: `pass789`
 
-##  Program description
-
-This project is a Tkinter-based Clinical Data Warehouse UI. It validates user credentials, checks user roles, displays role-based actions, and allows authorized users to retrieve, add, remove, and view patient-related data. It also supports administrative and management analytics such as encounter counts, provider workload, and department revenue.
 
 ##  Project structure
 
@@ -67,19 +81,6 @@ clinical-data-warehouse/
     ├── logger.py
     └── ui.py
 ```
-
-## Features
-
-- User authentication and role validation
-- Tkinter-based graphical user interface
-- Add, remove, and retrieve patient information
-- View patient clinical notes
-- Count patient visits
-- Generate statistics and charts
-- Monitor department revenue
-- Monitor provider workload
-- Persistent CSV file updates
-- Usage statistics logging
 
 ##  UML design
 
