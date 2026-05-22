@@ -1,0 +1,15 @@
+username,role,login_time,action,status
+alice,clinician,2026-05-22 09:30:56,login,success
+alice,clinician,2026-05-22 09:30:58,generate_key_statistics,success
+nina,nurse,2026-05-22 09:48:23,login,success
+nina,nurse,2026-05-22 09:48:47,count_visits,success
+nina,nurse,2026-05-22 09:48:59,retrieve_patient,success
+nina,nurse,2026-05-22 09:49:33,view_note,success
+carol,management,2026-05-22 09:50:09,login,success
+carol,management,2026-05-22 09:50:12,monitor_department_revenue,success
+carol,management,2026-05-22 09:50:12,monitor_department_revenue,success
+carol,management,2026-05-22 09:50:16,generate_key_statistics,success
+dave,admin,2026-05-22 09:50:44,login,success
+dave,admin,2026-05-22 09:50:46,count_encounters_by_department,success
+dave,admin,2026-05-22 09:50:48,count_encounters_per_patient,success
+dave,admin,2026-05-22 09:50:57,monitor_provider_workload,success

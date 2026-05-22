@@ -1,0 +1,90 @@
+# Clinical Data Warehouse Tkinter UI
+
+## How to run
+
+```bash
+python main.py
+```
+
+If the Data folder is missing, generate the data first:
+
+```bash
+python data_generator.py
+```
+
+Move the generated CSV files into the `Data/` folder if needed.
+
+## Test logins
+
+Clinician:
+- username: `alice`
+- password: `pass123`
+
+Nurse:
+- username: `nina`
+- password: `pass201`
+
+Admin:
+- username: `dave`
+- password: `pass000`
+
+Management:
+- username: `carol`
+- password: `pass789`
+
+## Program description
+
+This project is a Tkinter-based Clinical Data Warehouse UI. It validates user credentials, checks user roles, displays role-based actions, and allows authorized users to retrieve, add, remove, and view patient-related data. It also supports administrative and management analytics such as encounter counts, provider workload, and department revenue.
+
+## Folder structure
+
+```text
+clinical-data-warehouse/
+├── main.py
+├── data_generator.py
+├── requirements.txt
+├── README.md
+├── Data/
+│   ├── credentials.csv
+│   ├── patients.csv
+│   ├── providers.csv
+│   ├── departments.csv
+│   ├── encounters.csv
+│   ├── procedures.csv
+│   └── notes.csv
+├── output/
+│   └── usage_log.csv
+└── src/
+    ├── users.py
+    ├── warehouse.py
+    ├── logger.py
+    └── ui.py
+```
+
+## UML design
+
+Classes to include in the UML diagram:
+
+- `User`
+  - attributes: `username`, `role`
+- `AuthManager`
+  - attributes: `credentials_path`
+  - methods: `validate`
+- `UsageLogger`
+  - attributes: `log_path`
+  - methods: `log`
+- `ClinicalDataWarehouse`
+  - attributes: CSV paths and loaded data lists
+  - methods: `retrieve_patient`, `add_patient`, `remove_patient`, `count_visits_by_date`, `view_note`, `key_statistics`, `monitor_provider_workload`, `monitor_department_revenue`
+- `ClinicalDataWarehouseApp`
+  - attributes: `root`, `auth`, `warehouse`, `logger`, `current_user`
+  - methods: `show_login`, `login`, `show_menu`, and UI action methods
+
+## Output files
+
+- `Data/patients.csv`: updated after adding or removing patients.
+- `output/usage_log.csv`: records login attempts and user actions.
+
+
+## Key Statistics Charts
+The Key Statistics button uses matplotlib to create charts in `output/statistics_charts/`. Install required packages with `pip install -r requirements.txt`.
